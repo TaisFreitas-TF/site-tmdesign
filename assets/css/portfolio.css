@@ -1,0 +1,226 @@
+
+body{
+	padding: 2px;
+	
+}
+
+header{
+	background: rgb(33,2,135);
+	background: linear-gradient(90deg, rgba(33,2,135,0.6) 11%, rgba(153,11,255,0.6) 51%, rgba(222,4,175,0.5) 100%);
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 3rem;
+}
+
+
+header img{
+	width: 20%;
+}
+
+
+header{
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+/*Desenvolvimento Web*/
+
+a {
+	margin-bottom: 30px ;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 70px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  	outline: none;
+}
+
+
+.btn {
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn:after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: transparent;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.5),
+  inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  color: #fff;
+}
+
+.btn:hover:after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+
+
+.trabalhos{
+	border: solid 2px blue;
+	margin: 20px auto;
+}
+
+.trabalhos img{
+	width: 20%;
+	margin: 10px 0px;
+}
+
+.trabalhos h1{
+	background-color: #2e2ef7;
+	text-align: center;
+	font-size: 3rem;
+	color: #fff;
+	margin-top: 0px;
+	padding: 10px;
+}
+
+#cartao img{
+	width: 28%;
+}
+
+/*Rodapé*/
+
+
+
+.glow-on-hover {
+    width: 130px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*Responsive*/
+@media (max-width:800px){
+	.container{
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	header img{
+	width: 50%;
+	}
+
+	header{
+	font-size: 1rem;
+	}
+
+	a{
+		margin-bottom: 20px;
+	}
+
+
+	.custom-btn {
+  	width: 300px;
+  	height: 70px;
+   	}
+	
+	.trabalhos h1{
+	font-size: 2rem;
+	padding: 8px;
+	}
+
+	.trabalhos img{
+	width: 90%;
+	}
+
+	#cartao img{
+	width: 90%;
+	}
+
+	h4{
+		font-size: 80%;
+	}
+	
+}
+
+
+
