@@ -7,24 +7,25 @@
 }
 
 .voltar{
+  display: flex;
+  align-items: center;
   background: #fff;
-  border: solid 2px #051F40;
   margin-top: 140px;
+  padding: 0.5rem;
   position: fixed;
   width: 100%;
 }
 
-
-.voltar a{
-    color: #051F40;
+.voltar img{
+  width: 2.5rem;
 }
 
-.button2{
-    position: relative;
-    font-size: 30px;
-    width: 40px;
-    margin-left: 20px;
-    cursor: pointer;
+.voltar a{
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #051F40;
+  text-decoration: none;
 }
 
 .voltar a:hover{
