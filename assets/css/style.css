@@ -721,10 +721,7 @@ footer {
     }
 
   .hero h1 {
-    font-size: clamp(2.5rem, 7vw, 5rem);
-    color: #38bdf8;
-    letter-spacing: 3px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
     .hero-services {
