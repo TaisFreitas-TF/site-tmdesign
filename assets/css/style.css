@@ -539,7 +539,8 @@ footer {
     transition:.4s;
     cursor:pointer;
     box-shadow:0 10px 25px rgba(0,0,0,.2);
-    background-color:antiquewhite;
+     background-color: #FAEBD7 !important;
+    color-scheme: light;
 }
 
 .gallery img:hover{
